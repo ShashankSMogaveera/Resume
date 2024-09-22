@@ -1,0 +1,290 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-2.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Shashank Shekar Mogaveera} \\ \vspace{1pt}
+    Bangalore,Karnataka \\ \vspace{1pt}
+    \small \href{tel:+xxxxxxxxxxxx}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-9353201454} ~} \href{mailto:mogaveershashank@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mogaveershashank@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/shashank-shekar-mogaveera-999780232}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{LinkedIn}}  ~
+%    \href{https://github.com/ShashankSMogaveera}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
+    \href{https://leetcode.com/ShashankSM12}{\raisebox{-0.2\height}\faHackerrank\ \underline{LeetCode}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {EPAM Systems \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MAY 2024 -- Present} 
+      {\underline{Junior Software Engineer}}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Developed and maintained responsive web applications using React, JavaScript, HTML, CSS, and Tailwind CSS to enhance user experiences.}}
+        \resumeItem{\normalsize{Collaborated with cross-functional teams utilizing Agile methodologies and tools like Jira to ensure timely project delivery and continuous improvement.}}
+        \resumeItem{\normalsize{Implemented version control using Git and GitHub, streamlining the development process and enabling efficient team collaboration.}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dayananda Sagar Academy of Technology and Management}{08 2019 -- 06 2023}
+      {Bachelor of Engineering - Computer Science \textbf{CGPA} - \textbf{8.17}}{Bangalore, India}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sri Venkataramana PU College}{06 2017 -- 04 2019}
+      {PUC - PCMC  - \textbf{Percentage} - \textbf{88\%}}{Udupi, india}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sri Venkataramana High School}{06 2016 -- 04 2017}
+      {SSLC  - \textbf{Percentage} - \textbf{83.68\%}}{Udupi, india}
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{\underline{Gold Price Prediction Using Machine Learning}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{Python, Machine Learning, Mysql}}}}{03 2023}
+          \resumeItemListStart
+          \resumeItem{\normalsize{Conducted comprehensive data collection from reputable sources, gathering historical gold price data spanning multiple years.}}
+            \resumeItem{\normalsize{Developed a predictive model to forecast gold prices using machine learning algorithms}.}
+            \resumeItem{\normalsize{Utilized historical gold price data, economic indicators, and sentiment analysis to train the model}.}
+            %            \resumeItem{\textcolor{accent} {\href{Live Project Link} {\underline{\normalsize{Live site here}}}}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{\underline{Hospital Management System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{HTML, CSS, Javascript, Mysql}}}}{11 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Designed a application which maintains and manages records and implemented core features including patient registration, appointment scheduling, and inventory management, enhancing operational efficiency.}}
+            % \resumeItem{\textcolor{accent} {\href{Project Link} {\normalsize{Designed a application which maintains and manages records}}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+          \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{\underline{Student Management System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{HTML, CSS, Javascript, Mysql}}}}{04 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed and implemented features for a student management system, including student registration, course enrollment, and grading functionalities. }}
+            % \resumeItem{\normalsize{Contributed to the user interface (UI) design to enhance user experience (UX) and usability of the system for both students and administrators.}}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{React.js, JavaScript, Git & GitHub, HTML 5, CSS, SQL.}} \\
+     % \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Android Studio, Intellij.}} \\
+     % \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ReactJs.}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+%-----------Internship-----------
+\section{INTERNSHIP}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Tequed Labs \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{10 2022 -- 11 2022} 
+      {\underline{Web Development Intern}}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Acquired proficiency in web development technologies including HTML, CSS, and JavaScript through hands-on experience and guided learning.}}
+        \resumeItem{\normalsize{Developed dynamic and responsive web applications using modern front-end frameworks such as React.js, enhancing user interactivity and experience.}}
+        % \resumeItem{\normalsize{Demonstrated problem-solving skills by identifying and resolving technical challenges encountered during project development, ensuring timely delivery and functionality.}}
+        % \resumeItem{\normalsize{Projects -\textbf{E-Commerce Website, Budget Tracker}}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Database Management System (DBMS)
+                \item OOPS Concept
+                \item Agile Methodologies
+                \item Jira
+                \item Jenkins
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%  %-----------CERTIFICATIONS---------------
+% \section{CERTIFICATIONS}
+
+
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Java}} \hspace{2.59cm}
+% $\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{Sql}} \hspace{2.59cm}
+
+\section{LANGUAGES}
+
+
+$\sbullet[.75] \hspace{0.1cm}$ {{English}} \hspace{2.59cm}
+$\sbullet[.75] \hspace{0.1cm}$ {{Hindi}} \hspace{2.59cm}
+$\sbullet[.75] \hspace{0.1cm}$ {{Kannada}} \hspace{2.59cm}
+
+
+
+\end{document}
